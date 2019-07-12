@@ -1,0 +1,16 @@
+body {
+	
+}
+
+.header-container {
+	height: 200px;
+	background: url(../img/background-image.jpg) center/cover;
+}
+
+header img.logo {
+	width: 142px;
+	border-radius: 50%;
+	position: relative;
+	top: 130px;
+	left: 10%;
+}
