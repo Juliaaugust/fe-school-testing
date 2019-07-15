@@ -15,6 +15,9 @@ body {
 	font-family: 'Raleway', sans-serif;
 	color: #383838;
 }
+h1, h2, h3, h4 {
+	font-weight: 400;
+}
 .header-container {
 	height: 200px;
 	background: url(../img/background-image.jpg) center/cover;
@@ -36,7 +39,8 @@ main {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	margin: 0 -15px;
+	margin: 0 -15px 100px;
+
 }
 .main-container {
 	width: 70%;
@@ -110,18 +114,126 @@ li {
 	text-decoration: none;
 	color: #009DF2;
 }
+.contacts a:hover {
+	text-decoration: underline;
+}
 .follow-ul img {
-	width: 18px;
+	width: 24px;
 	margin-right: 8px;
 	position: relative;
-	top: 3px;
+	top: 5px;
+}
+.section2-header {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.search-input {
+    background: url('../img/icons/search.svg') no-repeat center left;
+    -webkit-background-size: 18px;
+    background-size: 18px;
+    padding-left:20px;
+    height: 28px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.search-input::placeholder {
+	color: #757575;
+} 
+hr {
+	border: none;
+    color: #eee;
+    background-color: #eee;
+    height: 2px;
+    margin: 15px 0;
+    display: none;
+}
+.lorem-ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.card {
+	width: 220px;
+}
+.card-top {
+	margin-bottom: 20px;
+}
+.card-top img {
+	width: 80px;
+	float: left;
+	margin-right: 10px;
+}
+.card-top h4 {
+	font-size: 18px;
+}
+.card-top:after {
+	display: block;
+	content: '';
+	clear: both;
+}
+.lorem-by {
+	color: #757575;
+}
+span.lorem-by,
+span.format {
+	font-weight: 700;
+}
+
+.card > p {
+	margin-bottom: 22px;
+}
+.public-btn {
+	border: 1px solid #009DF2;
+	border-radius: 5px;
+	color: #009DF2;
+	font-size: 16px;
+	padding: 2px 5px;
+}
+.public-btn:hover {
+	background: #009DF2;
+	color: #fff;
+	cursor: pointer;
+}
+.card-bottom {
+	text-align: right;
+	margin-top: 30px;
+}
+.card-bottom-header {
+	font-size: 24px;
+}
+.card-bottom-description,
+.card .format {
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+.details-btn {
+	border: 1px solid #FFA500;
+	border-radius: 5px;
+	background: #FFA500;
+	color: #fff;
+	font-size: 18px;
+	padding: 5px;
+	width: 100%;
 }
 
 
 
 
 
-@media screen and (max-width: ) {
+
+
+
+
+@media screen and (max-width: 984px) {
 	
 }
 
