@@ -1,16 +1,132 @@
-body {
-	
-}
 
+/*violet 5A4D99
+green-yellow BFCC36
+dark blue (indigo) 1A587A
+orange FFA500
+blue 009DF2
+*/
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Raleway', sans-serif;
+	color: #383838;
+}
 .header-container {
 	height: 200px;
 	background: url(../img/background-image.jpg) center/cover;
 }
-
 header img.logo {
 	width: 142px;
 	border-radius: 50%;
 	position: relative;
 	top: 130px;
-	left: 10%;
+	left: 20%;
 }
+main {
+	width: 60%;
+	margin: 110px auto;
+}
+.main-wrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: 0 -15px;
+}
+.main-container {
+	width: 70%;
+	margin: 0 15px;
+}
+main h1,
+.about-text {
+	margin-bottom: 50px;
+}
+.main-container h2 {
+	margin-bottom: 30px;
+}
+li {
+	list-style: none;
+}
+.area-list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+}
+.area-list li {
+	text-transform: capitalize;
+	margin: 5px 10px;
+	font-size: 0.9em;
+}
+.li-icon {
+	height: 24px;
+	margin-right: 5px;
+	position: relative;
+	top: 5px;
+}
+.internet {
+	background: #5A4D99;
+}
+.culture {
+	background: #BFCC36;
+}
+.handshake {
+	background: #1A587A;
+}
+
+.contacts {
+	width: 30%;
+	margin: 0 15px;
+}
+.contacts h2 {
+	margin-bottom: 10px;
+}
+.contacts h2:first-child {
+	margin-bottom: 30px;
+}
+.contact {
+	margin-bottom: 50px;
+}
+.contact img {
+	width: 48px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 10px;
+}
+.contact:after {
+	display: block;
+	content: '';
+	clear: both;
+}
+.contacts a {
+	text-decoration: none;
+	color: #009DF2;
+}
+.follow-ul img {
+	width: 18px;
+	margin-right: 8px;
+	position: relative;
+	top: 3px;
+}
+
+
+
+
+
+@media screen and (max-width: ) {
+	
+}
+
+
+
+
+
+
