@@ -115,7 +115,7 @@ function createPiece () {
     let piecePublicApi = {
         isThereWay() {
             const isTheWallThere = field.isTheWallThere(position, directionNames[direction]);
-            return !isTheWallThere
+            return !isTheWallThere;
         },
 
         turnLeft() {
@@ -159,6 +159,10 @@ function createPiece () {
         },
         amIFree() {
             return isPieceOut();
+        },
+
+        finish() {
+            moves = [];
         }
     };
 
@@ -198,13 +202,28 @@ function resetField() {
     result.classList.remove(successModifier);
 }
 
+function move(piece) {
+    if(piece.amIFree()) {
+        piece.finish();
+        return;
+    }
+    if (piece.isThereWay()) {
+        piece.goForward();
+    }  else {
+        piece.turnLeft();
+        if (!piece.isThereWay()) {
+            piece.turnRight();
+            piece.turnRight();
+        }
+    }
+    setTimeout(() => {
+        move(piece);
+    }, 200)
+}
+
 function escapePlan() {
     const piece = createPiece();
-    // piece.isThereWay();
-    // piece.goForward();
-    // piece.turnRight();
-    // piece.turnLeft();
-    // piece.amIFree();
+    move(piece);
 }
 
 function main() {
